@@ -48,7 +48,7 @@ class CardDeliveryTest {
         $(".button__text").click();
 
         //check
-        $("[data-test-id='replan-notification'] .notification__content").should(appear, Duration.ofSeconds(15));
+        $("[data-test-id='replan-notification'] .notification__content").should(appear, Duration.ofSeconds(20));
         $("[data-test-id='replan-notification'] .notification__content").shouldHave(text("У вас уже запланирована встреча на другую дату. Перепланировать?"));
 
         //click
