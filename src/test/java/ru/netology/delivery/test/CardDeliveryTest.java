@@ -1,11 +1,9 @@
 package ru.netology.delivery.test;
 
-import com.codeborne.selenide.ElementsCollection;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.Keys;
-
 import ru.netology.delivery.data.DataGenerator;
 
 import java.time.Duration;
@@ -25,7 +23,7 @@ class CardDeliveryTest {
     void shouldSuccessfulPlanAndReplanMeeting() {
 
         var validUser = DataGenerator.Registration.generateUser("ru");
-        var daysToAddForFirstMeeting = 4;
+        var daysToAddForFirstMeeting = 5;
         var firstMeetingDate = DataGenerator.generateDate(daysToAddForFirstMeeting);
         var daysToAddForSecondMeeting = 7;
         var secondMeetingDate = DataGenerator.generateDate(daysToAddForSecondMeeting);
